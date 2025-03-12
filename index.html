@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Fourty Six Library</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .navbar-brand, .nav-link {
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            }
+            
+            .masthead-heading, .masthead-subheading {
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            }
+            
+            .section-heading {
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            }
+
+            /* Update style untuk menghilangkan border/stroke pada foto tim */
+            .team-member img {
+                border: none !important;
+            }
+            
+            /* Update style untuk menghilangkan border pada foto timeline */
+            .timeline-image img {
+                border: none !important;
+                outline: none !important;
+            }
+            
+            /* Tambahan untuk timeline image container */
+            .timeline-image {
+                border: none !important;
+                background: none !important;
+            }
+            
+            .rounded-circle {
+                border: none !important;
+            }
+            
+            /* Tambahan styles untuk responsif */
+            @media (max-width: 768px) {
+                .masthead-heading {
+                    font-size: 2rem !important;
+                    margin-bottom: 1rem;
+                }
+                
+                .masthead-subheading {
+                    font-size: 1.2rem !important;
+                }
+                
+                .btn-xl {
+                    padding: 0.75rem 1.5rem !important;
+                    font-size: 0.9rem !important;
+                }
+                
+                .section-heading {
+                    font-size: 1.75rem !important;
+                }
+                
+                .timeline:before {
+                    left: 40px !important;
+                }
+                
+                .timeline > li .timeline-panel {
+                    width: calc(100% - 90px) !important;
+                    float: right !important;
+                }
+                
+                .timeline > li .timeline-image {
+                    left: 0 !important;
+                    margin-left: 0 !important;
+                    width: 80px !important;
+                    height: 80px !important;
+                }
+                
+                .timeline > li.timeline-inverted > .timeline-panel {
+                    float: right !important;
+                    margin-right: 0 !important;
+                    padding: 0 20px 20px 100px !important;
+                }
+                
+                .timeline > li > .timeline-panel {
+                    padding: 0 20px 20px 100px !important;
+                }
+                
+                .fa-stack {
+                    width: 3em !important;
+                    height: 3em !important;
+                }
+                
+                .team-member img {
+                    width: 180px !important;
+                    height: 180px !important;
+                }
+            }
+            
+            @media (max-width: 576px) {
+                .portfolio-item {
+                    margin-bottom: 1rem;
+                }
+                
+                .portfolio-caption {
+                    padding: 1rem !important;
+                }
+                
+                .footer {
+                    text-align: center;
+                }
+                
+                .footer .text-lg-start,
+                .footer .text-lg-end {
+                    text-align: center !important;
+                }
+                
+                .footer .btn-social {
+                    margin: 0.5rem !important;
+                }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Fourty Six Library</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Profil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://103.165.130.204:8123/inlislite3/opac/" target="_blank">OPAC</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://103.165.130.204:8123/inlislite3/digitalcollection/" target="_blank">E-Book</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Selamat Datang Di Website Kami</div>
+                <div class="masthead-heading text-uppercase">Fourty Six Library</div>
+                <div class="masthead-subheading">NPP : 3175031H2000005</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Pelajari Lebih Lanjut</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Layanan Kami</h2>
+                    <h3 class="section-subheading text-muted">Berbagai layanan perpustakaan untuk mendukung kebutuhan Anda</h3>
+                </div>
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Layanan baca di tempat</h4>
+                        <p class="text-muted">Area membaca yang nyaman dengan berbagai koleksi buku populer dan majalah.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-exchange-alt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Layanan sirkulasi</h4>
+                        <p class="text-muted">Pinjam buku fisik dengan sistem yang mudah dan cepat. Tersedia ribuan koleksi dari berbagai kategori.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Layanan referensi</h4>
+                        <p class="text-muted">Bantuan pencarian dan penggunaan bahan referensi untuk penelitian dan pembelajaran.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Layanan penelusuran informasi</h4>
+                        <p class="text-muted">Akses ke database dan sumber informasi digital untuk penelitian.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Layanan bimbingan literasi informasi</h4>
+                        <p class="text-muted">Program pelatihan penelitian dan penggunaan sumber referensi digital.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-copy fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Layanan penyediaan dokumen</h4>
+                        <p class="text-muted">Tersedia layanan fotokopi, print dan scan dokumen dengan harga terjangkau.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Layanan ekstensi masyarakat</h4>
+                        <p class="text-muted">Program literasi dan kegiatan edukasi untuk masyarakat sekitar perpustakaan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Dokumen</h2>
+                    <h3 class="section-subheading text-muted">&nbsp;</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item h-100">
+                            <div class="portfolio-image">
+                                <img class="img-fluid w-100 object-fit-cover" style="height: 300px;" src="assets/img/portfolio/1.jpg" alt="Koleksi Fiksi" />
+                            </div>
+                            <div class="portfolio-caption bg-white p-3">
+                                <div class="portfolio-caption-heading fs-5 fw-bold">Fiksi</div>
+                                <div class="portfolio-caption-subheading text-muted">Novel & Cerita</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item h-100">
+                            <div class="portfolio-image">
+                                <img class="img-fluid w-100 object-fit-cover" style="height: 300px;" src="assets/img/portfolio/2.jpg" alt="Koleksi Non-Fiksi" />
+                            </div>
+                            <div class="portfolio-caption bg-white p-3">
+                                <div class="portfolio-caption-heading fs-5 fw-bold">Non-Fiksi</div>
+                                <div class="portfolio-caption-subheading text-muted">Buku Ilmiah & Non-Fiksi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item h-100">
+                            <div class="portfolio-image">
+                                <img class="img-fluid w-100 object-fit-cover" style="height: 300px;" src="assets/img/portfolio/3.jpg" alt="Koleksi Pendidikan" />
+                            </div>
+                            <div class="portfolio-caption bg-white p-3">
+                                <div class="portfolio-caption-heading fs-5 fw-bold">Pendidikan</div>
+                                <div class="portfolio-caption-subheading text-muted">Buku Pendidikan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item h-100">
+                            <div class="portfolio-image">
+                                <img class="img-fluid w-100 object-fit-cover" style="height: 300px;" src="assets/img/portfolio/4.jpg" alt="Koleksi Sejarah" />
+                            </div>
+                            <div class="portfolio-caption bg-white p-3">
+                                <div class="portfolio-caption-heading fs-5 fw-bold">Sejarah</div>
+                                <div class="portfolio-caption-subheading text-muted">Buku Sejarah</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item h-100">
+                            <div class="portfolio-image">
+                                <img class="img-fluid w-100 object-fit-cover" style="height: 300px;" src="assets/img/portfolio/5.jpg" alt="Koleksi Sains" />
+                            </div>
+                            <div class="portfolio-caption bg-white p-3">
+                                <div class="portfolio-caption-heading fs-5 fw-bold">Sains & Teknologi</div>
+                                <div class="portfolio-caption-subheading text-muted">Buku Ilmiah & Teknologi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item h-100">
+                            <div class="portfolio-image">
+                                <img class="img-fluid w-100 object-fit-cover" style="height: 300px;" src="assets/img/portfolio/6.jpg" alt="Koleksi Sastra" />
+                            </div>
+                            <div class="portfolio-caption bg-white p-3">
+                                <div class="portfolio-caption-heading fs-5 fw-bold">Sastra</div>
+                                <div class="portfolio-caption-subheading text-muted">Buku Sastra</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Profil Perpustakaan</h2>
+                    <h3 class="section-subheading text-muted">Perjalanan perpustakaan kami dari masa ke masa.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2010</h4>
+                                <h4 class="subheading">Awal Mula</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Perpustakaan kami dimulai sebagai perpustakaan kecil dengan koleksi 1000 buku.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2015</h4>
+                                <h4 class="subheading">Perkembangan</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Perpustakaan kami berkembang menjadi lebih besar dan lebih banyak koleksi.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2020</h4>
+                                <h4 class="subheading">Era Digital</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Perpustakaan kami mulai mengadopsi teknologi digital untuk memperluas aksesibilitas.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Tim Perpustakaan</h2>
+                    <h3 class="section-subheading text-muted">Staf profesional kami siap melayani Anda.</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="team-member text-center">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." style="width: 200px; height: 200px; object-fit: cover;" />
+                            <h4 class="mt-4">Bu Irma</h4>
+                            <p class="text-muted mb-4">Mengelola operasi dan pengembangan perpustakaan.</p>
+                            <hr class="w-75 mx-auto">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member text-center">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." style="width: 200px; height: 200px; object-fit: cover;" />
+                            <h4 class="mt-4">Bu Maria</h4>
+                            <p class="text-muted mb-4">Bertanggung jawab atas koleksi dan layanan.</p>
+                            <hr class="w-75 mx-auto">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member text-center">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." style="width: 200px; height: 200px; object-fit: cover;" />
+                            <h4 class="mt-4">Pak Jamal</h4>
+                            <p class="text-muted mb-4">Mengelola sumber daya digital dan teknologi.</p>
+                            <hr class="w-75 mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="py-5 bg-light" id="faq">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading text-uppercase">FAQ</h2>
+                    <h3 class="section-subheading text-muted">Pertanyaan yang Sering Diajukan</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Bagaimana cara menjadi anggota perpustakaan?</h5>
+                                <p class="card-text text-muted">Anda dapat mendaftar secara online melalui website kami atau datang langsung ke perpustakaan dengan membawa KTP dan foto terbaru.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Berapa lama masa peminjaman buku?</h5>
+                                <p class="card-text text-muted">Masa peminjaman buku adalah 14 hari dan dapat diperpanjang maksimal 2 kali jika tidak ada yang memesan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Apakah ada denda keterlambatan?</h5>
+                                <p class="card-text text-muted">Ya, denda keterlambatan dikenakan Rp 1.000 per hari per buku untuk mendorong pengembalian tepat waktu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Bagaimana cara mengakses e-library?</h5>
+                                <p class="card-text text-muted">Anggota dapat mengakses e-library melalui website kami dengan login menggunakan ID anggota dan password yang telah diberikan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Apakah perpustakaan buka setiap hari?</h5>
+                                <p class="card-text text-muted">Perpustakaan buka Senin-Jumat (08.00-20.00) dan Sabtu (09.00-17.00). Kami tutup pada hari Minggu dan hari libur nasional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Berapa buku yang dapat dipinjam sekaligus?</h5>
+                                <p class="card-text text-muted">Anggota dapat meminjam maksimal 4 buku secara bersamaan. Untuk mahasiswa dan peneliti dapat meminjam hingga 6 buku.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Apakah tersedia layanan fotokopi?</h5>
+                                <p class="card-text text-muted">Ya, kami menyediakan layanan fotokopi dengan biaya Rp 500 per lembar untuk hitam-putih dan Rp 2.000 untuk berwarna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Bagaimana cara memesan ruang diskusi?</h5>
+                                <p class="card-text text-muted">Pemesanan ruang diskusi dapat dilakukan online melalui website atau aplikasi kami minimal 1 hari sebelum penggunaan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section bg-light" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-dark">Alamat Kami</h2>
+                    <h3 class="section-subheading text-muted">Kunjungi perpustakaan kami</h3>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Lokasi</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt me-2"></i> B7, Jl. Cipinang Pulo No.19, RT.7/RW.14, North Cipinang Besar, Jatinegara, East Jakarta City, Jakarta 13410
+                                </p>
+                                <hr>
+                                <h5 class="card-title fw-bold mb-3">Jam Operasional</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-clock me-2"></i> Senin - Jumat<br>
+                                    <i class="fas fa-clock me-2"></i> 06.00 - 15.00 WIB<br>
+                                    <i class="fas fa-clock me-2"></i> Minggu & Hari Libur: Tutup
+                                </p>
+                                <hr>
+                                <h5 class="card-title fw-bold mb-3">Kontak</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-phone me-2"></i>  (021) 8195127<br>
+                                    <i class="fas fa-envelope me-2"></i> smkn46jakarta@gmail.com<br>
+                                    <i class="fab fa-instagram me-2 text-dark"></i> <a href="https://www.instagram.com/fourtysix_library?igsh=MTF1Nm1meWwxbnFyeA==" target="_blank" class="text-decoration-none text-muted">@fourtysix_library</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-0">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0425532334365!2d106.88167367499!3d-6.217090693770947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f36a76939ce9%3A0x1dd69348f251fa2a!2sSMK%20Negeri%2046%20Jakarta!5e0!3m2!1sid!2sid!4v1710900000000!5m2!1sid!2sid"
+                                    width="100%" 
+                                    height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">3175031H2000005</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/fourtysix_library?igsh=MTF1Nm1meWwxbnFyeA==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!"></a>
+                        <a class="link-dark text-decoration-none" href="#!"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Threads
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
