@@ -3303,7 +3303,7 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #000;
   --bs-btn-bg: #ffc800;
   --bs-btn-border-color: #ffc800;
   --bs-btn-hover-color: #fff;
@@ -12770,6 +12770,7 @@ header.masthead::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   /* Sesuaikan opacity */
+  opacity: 100%;
   z-index: 1;
 }
 
@@ -12797,7 +12798,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 10rem;
+    padding-top: 15rem;
     padding-bottom: 12.5rem;
   }
 
