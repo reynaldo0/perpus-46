@@ -12942,7 +12942,7 @@ header.masthead .masthead-heading {
 .team-image {
   width: 100%;
   max-width: 800px;
-  max-height: 400px;
+  max-height: 500px;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
